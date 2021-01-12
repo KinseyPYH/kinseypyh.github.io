@@ -39,3 +39,6 @@ li {
 	text-decoration: none;
 }
 
+li:hover {
+	background-color: rgb(226, 226, 226);
+}
