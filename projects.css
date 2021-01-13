@@ -79,8 +79,8 @@ li:hover {
 }
 
 .textContainer{
+    position:relative;
 	width:100%;
-	position:relative;
 	height: 5%;
 	display: flex;
     flex-direction: row;
@@ -111,7 +111,7 @@ li:hover {
 #copyright {
 	position:relative;
 	font-family: "playfair";
-	margin-top:5px; 
+	margin-top:0.1%; 
 	font-size: 11px;
 	opacity: 0.5;
 }
