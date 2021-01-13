@@ -108,6 +108,15 @@ li:hover {
 
 
 
+#copyright {
+	position:relative;
+	font-family: "playfair";
+	margin-top:5px; 
+	font-size: 11px;
+	opacity: 0.5;
+}
+
+
 @font-face{
 	font-family: "playfair";
 	src: url('fonts/PlayFairReg.ttf');
