@@ -74,7 +74,7 @@ li:hover {
 	background-color: rgb(226, 226, 226);
 }
 
-#homeButton {
+#resumeBar {
 	background-color: rgb(226,226,226);
 }
 
@@ -90,14 +90,6 @@ li:hover {
 	top: 40%;
 }
 
-.text {
-	position: relative;
-	font-family: 'argh'; 
-	font-size: 18px;
-	width: 50%;
-	word-wrap: normal;
-	text-align: center;
-}
 .footer {
 	position: fixed;
 	left: 0;
