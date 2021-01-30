@@ -1,12 +1,15 @@
 html, body {
 	margin:0;
 	padding: 0;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 340vh;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
 }
 
 body {
 	overflow: hidden;
+	position: absolute;
 }
 
 a {
@@ -23,7 +26,8 @@ a:link, a:visited {
 	top: 0px;
 	padding-top: 2%;
 	text-align: center;
-	position: absolute;
+	position: fixed;
+	z-index: 5;
 }
 
 #bar {
@@ -49,18 +53,140 @@ a:link, a:visited {
 
 #introBar {
 	list-style-type: none;
-	margin-top: -0.75%;
+	margin-top: 0.1%;
 	overflow: hidden;
 	background-color: white;
 	text-align: center;
 	display: inline-block;
-	padding-left: 70%;
+	padding-left: 0;
 	
 }
 
 
 
-li {
+#AboutMeP{
+	position: relative;
+	left: 0%;
+	width: 100%;
+	margin-top: 75vh;
+	text-align: left;
+
+}
+
+#aboutMeText {
+	position: relative;
+	width: 100%;
+	top: 40vh;
+}
+
+
+
+#portfolioP {
+	position: relative;
+	left: 0%;
+	width: 100%;
+	top: 112vh;
+	text-align: left;
+	
+}
+#resumeDownload {
+	position:relative;
+	top:10vh;
+	border-radius: 10px ;
+	border: 2px solid black;
+	width: 10%;
+	height: 5%;
+	padding: 10px;
+	margin-left: -10px;	
+	left: 44.5%;
+	background-color: rgb(240,240,240);
+	text-align: center;
+}
+
+
+
+#resumeDownload:hover {
+	background-color: rgb(212,212,212);
+}
+
+#resumeText {
+	position: relative;
+	text-align: left;
+	width: 50%;
+	left: 35%;
+	top: 15vh;
+	font-size: 16px;
+}
+
+.portfolioHead {
+	position: relative;
+	text-align: left;
+	left: -25%;
+	margin-top: 10%;
+	
+}
+
+.portfolioJobName {
+	position: relative;
+	text-align: left;
+	left: -25%;
+	margin-top: 0;
+	font-size: 15px;
+	color:rgb(90, 90, 90);
+}
+
+.portfolioJobLocation {
+	position: relative;
+	right: -40%;
+	color: rgb(90, 90, 90)
+}
+
+
+.portfolioDate {
+	position: relative;
+	right: -34.5%;
+	color: rgb(90, 90, 90)
+}
+
+.portfolioJobLocation, .portfolioHead {
+	display: inline;
+}
+
+.portfolioJobName, .portfolioDate {
+	display: inline;
+}
+
+
+#TrotterDate {
+	right: -38.5%;
+}
+
+hr {
+	width: 100%;
+	margin-left: -20%;
+}
+
+
+.descriptionItem {
+	margin-left: -10%;
+	margin-top: 1%;
+}
+
+/*
+#resumeP {
+	position: relative;
+	left: 37.5%;
+	width: 50%;
+	margin-top: 120vh;
+	text-align: center;
+
+}
+*/
+
+
+
+
+li.topList {
 	font-family: 'playfair';
 
 	display: inline-block;
@@ -70,8 +196,18 @@ li {
 	text-decoration: none;
 }
 
-li:hover {
+li.topList:hover {
 	background-color: rgb(226, 226, 226);
+}
+
+ul.JobDescription{
+	margin-left: -15%;
+}
+
+ul.SubDescription li {
+	list-style-type: circle;
+	margin-left: 0%;
+	
 }
 
 #homeButton {
@@ -81,13 +217,25 @@ li:hover {
 .textContainer{
 	width:100%;
 	position:relative;
-	height: 5%;
+	height: 50vh;
 	display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 	align-items: center;
-	top: 40%;
+	top: 6.5%;
+}
+
+.header {
+	position: relative;
+	top: 10vh;
+	font-family: 'argh'; 
+	font-size: 18px;
+	
+	width: 100%;
+	left: -0.25%;
+	word-wrap: normal;
+	text-align: center;
 }
 
 .text {
@@ -100,7 +248,7 @@ li:hover {
 }
 .footer {
 	position: fixed;
-	left: 0;
+	left: 0%;
 	bottom: 0;
 	width: 100%;
 	height: 20px;
@@ -108,12 +256,27 @@ li:hover {
 }
 .links {
 	position: relative;
-	margin-top: -50px;
-	padding: 10px;
+	margin-top: -45px;
+	padding-bottom: 5px;
+	left: 25%;
+	width: 50%;
 	word-wrap:normal;
 	text-align: center;
 }
 
+#toTop {
+	display: none;
+	position: relative;
+	margin-top: -50px;
+	left: 95%;
+	width: 2%;
+	padding: 5px;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+#toTop:hover {
+	background-color: rgb(226,226,226);
+}
 
 #copyright {
 	position:relative;
