@@ -10,8 +10,3 @@ $(document).scroll(function() {
         $('#toTop').hide();
     }
 });
-
-
-
-
-
