@@ -9,7 +9,9 @@ function start() {
     var modal1Button = document.getElementById("badmintonScoreButton");
     var modal2Button = document.getElementById("robotButton")
 
-    var span = document.getElementsByClassName("close")[0];
+    var badmintonClose = document.getElementById("badmintonClose");
+    var robotClose = document.getElementById("robotClose");
+
 
     modal1Button.onclick = function() {
         modal1.style.display = "block";
@@ -19,9 +21,13 @@ function start() {
         modal2.style.display = "block";
     }
 
-    span.onclick = function() {
-        modal2.style.display = "none";
+    badmintonClose.onclick = function() {
+            modal1.style.display = "none";
     }
+
+    robotClose.onclick = function() {
+        modal2.style.display = "none";
+}
 
     window.onclick = function(event) {
         if (event.target == modal1) {

@@ -11,25 +11,25 @@
     
     <div class="top-bar">
         <a href="">
-            <div id="website-logo">
+            <div id="website-logo" alt="Kinsey Ho website logo" aria-label="Kinsey Ho website logo">
                 <h1>Kinsey Ho</h1>
             </div>
         </a>
         <div class="top-nav">
-            <ul id="page-nav">
+            <ul id="page-nav" aria-label="Page navigation">
                 <a href="#about_jump">
                     <li tabIndex=1>
-                        <div>About</div>
+                        <div aria-label="About Section">About</div>
                     </li>
                 </a>
                 <a href="#project_jump">
                     <li tabIndex=2>
-                        <div>Projects</div>
+                        <div aria-label="Project section">Projects</div>
                     </li>
                 </a>
                 <a href="#experience_jump">
                     <li tabIndex="3">
-                        <div>Experience</div>
+                        <div aria-label="Experience Section">Experience</div>
                     </li>
                 </a>
             </ul>
@@ -38,14 +38,14 @@
     <div class="page">
         <div class="about">
             <a class="jump_to" id="about_jump"></a>
-            <div class="text" id="intro">
+            <div class="text" id="intro" aria-label="Introduction Text">
                 <p>Hi, I'm Kinsey! 
                     <br>
                     I'm a senior in a BS/MS program for Computer Engineering and Computer Science at Northwestern University.
                 </p>
                 After graduating, I'll be working as a full time software engineer at Google.
             </div>
-            <a href="docs/resume.pdf"> 
+            <a href="docs/resume.pdf" aria-label="Link to Download Resume"> 
                 <div id="resumeDownload">
                     <p>Resume</p> 
                 </div>
@@ -55,27 +55,27 @@
         </div>
 
         <div id="projects">
-            <div class="header">
+            <div class="header" aria-label="Projects Section">
                 <h2> Projects </h2>
             </div>
             <a class="jump_to" id="project_jump"></a>
 
             <div class="project-buttons-row">
                 <div id="badmintonscoresModal" class="modal">
-                    <div class="modal-content">
-                      <span class="close">&times;</span>
+                    <div class="modal-content" aria-label="Project in-depth description">
+                      <button class="close" id="badmintonClose" tabIndex="0">&times;</button>
                       <div class="project-image">
-                        <a href="https://www.badminton-scores.com"><img src="images/badmintonscores_example.png" alt="Badminton Scores Website Image"></a>
+                        <a tabIndex="0" href="https://www.badminton-scores.com" ><img src="images/badmintonscores_example.png" alt="Badminton Scores Website Image"></a>
                       </div>
-                      <div class="text">
-                        <u><a href="https://www.badminton-scores.com"><h2> badminton-scores.com </h2></a></u>
+                      <div class="text" aria-label="Project description">
+                        <u><a tabIndex="0" href="https://www.badminton-scores.com" ><h2 id="badmintonh2"> badminton-scores.com </h2></a></u>
                         <p> 
                             This website displays live professional badminton scores. Users are able to follow professional badminton matches as they are played. 
                             Users are also able to click on the calendar on the top left to choose a previous match day and display all match results for that day.
                             Click the photo to head to the website!
                         </p>
                       </div>
-                        <div class="text">
+                        <div class="text" aria-label="Backend description">
                             <h3>Backend</h3>
                             <p> The backend is hosted on AWS EC2 and uses Node.js. It has a couple of functions: 
                                 <br>
@@ -87,14 +87,14 @@
                             
                             </p>
                         </div>
-                        <div class="text">
+                        <div class="text" aria-label="Frontend description">
                             <h3>Frontend</h3>
                             <p> The frontend simply uses HTML, CSS, and JS. To collect match data, it uses AJAX to make HTTP calls to the backend server.
                             
                             </p>
                         </div>
 
-                        <div class="text">
+                        <div class="text" aria-label="Database used description">
                             <h3>Database</h3>
                             <p> The database used to store match data is MongoDB Atlas. The match data is currently stored by date. 
                             
@@ -104,25 +104,25 @@
                 </div>   
 
                 <div id="robotModal" class="modal">
-                    <div class="modal-content">
-                      <span class="close">&times;</span>
+                    <div class="modal-content" aria-label="Project in-depth description">
+                      <button class="close" id="robotClose" tabIndex="0">&times;</button>
                       <div class="project-image">
                        <img src="images/robot.jpg" alt="Four Wheel Robot Photo">
                       </div>
-                      <div class="text">
-                        <u><a href="https://www.badminton-scores.com"><h2> Semi-Autonomous Path-Finding Robot</h2></a></u>
+                      <div class="text" aria-label="Project description">
+                        <h2> Semi-Autonomous Path-Finding Robot</h2>
                         <p> 
                             This robot is a path-finding robot. Its function is to drive through the warehouse and scan all inventory. My contribution was to enable semi-autonomous driving. 
                             This project was successful in that it was able to, given a pre-mapped space, travel from point A to point B, avoiding obstacles in the way. 
                         </p>
                       </div>
-                        <div class="text">
+                        <div class="text" aria-label="Robot Framework description">
                             <h3>Robot Framework</h3>
                             <p> The robot used Robot Operating System (ROS) to control individual motors and sensors. The robot had a Jetson Nano as its onboard computer. 
                             
                             </p>
                         </div>
-                        <div class="text">
+                        <div class="text" aria-label="Path Planning description">
                             <h3>Path Planning</h3>
                             <p> The path planning utilised a LIDAR sensor, an IMU, and SLAM.
                             <p>The data from the LIDAR and the IMU were combined using the Extended Kalman Filter and were able to be used in the SLAM library for path finding. </p>
@@ -130,26 +130,26 @@
                     </div>
                 </div>   
                 <div class="project-buttons">
-                        <button id="badmintonScoreButton">
+                        <button id="badmintonScoreButton" aria-label="Button to learn more about badminton scores project">
                             <div class="thumbnail">
                                 <img src="images/badmintonscores.png" alt="Badminton Scores Website Image">
                             </div>
                             <div class="image-overlay">
                                 <div class="image-info">
                                     <p>badminton-scores.com</p>
-                                    <p id="description">A website that tracks pro badminton scores</p>
+                                    <p id="description" aria-label="Project description">A website that tracks pro badminton scores</p>
                                 </div>
                             </div>
                         </button>
 
-                        <button id="robotButton">
+                        <button id="robotButton" aria-label="Button to learn more about robot project">
                             <div class="thumbnail">
                                 <img src="images/robot.jpg" alt="Image of Robot with Four Wheels">
                             </div>
                             <div class="image-overlay">
-                                <div class="image-info">
+                                <div class="image-info" aria-label="Semi-autonomous robot">
                                     <p>Semi-Autonomous Robot</p>
-                                    <p id="description">A path-finding robot for inventory scanning</p>
+                                    <p id="description" aria-label="Project description">A path-finding robot for inventory scanning</p>
 
                                 </div>
                             </div>
